@@ -1,0 +1,12 @@
+<ion-header> 
+  <ion-toolbar>
+    <ion-title>
+      Descargar ASDE APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <a  *ngIf="ios" href="itms-services://?action=download-manifest&url=https://192.168.0.8:8100/assets/dl/manifest.plist"><img alt="" src="assets/img/downliOS.png"></a>
+  <a  *ngIf="android" href="https://192.168.0.8:8100/assets/dl/ASDE.apk"><img alt="" src="assets/img/downlGoogle.png"></a>
+</ion-content>
